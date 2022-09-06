@@ -1,0 +1,6 @@
+framework module Pods_MovieArtApp {
+  umbrella header "Pods-MovieArtApp-umbrella.h"
+
+  export *
+  module * { export * }
+}

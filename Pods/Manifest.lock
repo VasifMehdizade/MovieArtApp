@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (5.6.2)
+  - KeychainAccess (4.2.2)
+  - ProgressHUD (13.6)
+  - SDWebImage (5.13.2):
+    - SDWebImage/Core (= 5.13.2)
+  - SDWebImage/Core (5.13.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - KeychainAccess
+  - ProgressHUD
+  - SDWebImage (~> 5.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - KeychainAccess
+    - ProgressHUD
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
+  ProgressHUD: 4bdaa0d2ddf676b23324b199f9facffb5c3a1620
+  SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
+
+PODFILE CHECKSUM: f9ff696af0789419c8f7848068f1088712e26765
+
+COCOAPODS: 1.11.3
