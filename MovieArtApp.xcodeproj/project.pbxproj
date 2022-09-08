@@ -10,7 +10,6 @@
 		2716D7F2F99515A4092EC93B /* Pods_MovieArtApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E3822BB4C22E43D3DEBBEC /* Pods_MovieArtApp.framework */; };
 		CED6DC9228C7AA3900F29266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6DC9128C7AA3900F29266 /* AppDelegate.swift */; };
 		CED6DC9428C7AA3900F29266 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6DC9328C7AA3900F29266 /* SceneDelegate.swift */; };
-		CED6DC9628C7AA3900F29266 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED6DC9528C7AA3900F29266 /* ViewController.swift */; };
 		CED6DC9928C7AA3900F29266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED6DC9728C7AA3900F29266 /* Main.storyboard */; };
 		CED6DC9C28C7AA3900F29266 /* MovieArtApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CED6DC9A28C7AA3900F29266 /* MovieArtApp.xcdatamodeld */; };
 		CED6DC9E28C7AA3A00F29266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED6DC9D28C7AA3A00F29266 /* Assets.xcassets */; };
@@ -23,7 +22,6 @@
 		CED6DC8E28C7AA3900F29266 /* MovieArtApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieArtApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CED6DC9128C7AA3900F29266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CED6DC9328C7AA3900F29266 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CED6DC9528C7AA3900F29266 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CED6DC9828C7AA3900F29266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CED6DC9B28C7AA3900F29266 /* MovieArtApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MovieArtApp.xcdatamodel; sourceTree = "<group>"; };
 		CED6DC9D28C7AA3A00F29266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -58,8 +56,92 @@
 				5BBAE7E637F30CA0A664019A /* Pods-MovieArtApp.debug.xcconfig */,
 				F3190B127F1762ED564876F8 /* Pods-MovieArtApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE3E096A28CA067C0089F856 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				CE3E096C28CA068A0089F856 /* ManagerFiles */,
+				CE3E096B28CA06860089F856 /* Core */,
+			);
+			path = NetworkLayer;
+			sourceTree = "<group>";
+		};
+		CE3E096B28CA06860089F856 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		CE3E096C28CA068A0089F856 /* ManagerFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ManagerFiles;
+			sourceTree = "<group>";
+		};
+		CE3E096D28CA06B70089F856 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CE3E096E28CA06CA0089F856 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				CE3E096F28CA06DF0089F856 /* HomePage */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		CE3E096F28CA06DF0089F856 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				CE3E097228CA06F20089F856 /* Model */,
+				CE3E097128CA06EF0089F856 /* View */,
+				CE3E097028CA06EB0089F856 /* ViewModel */,
+			);
+			path = HomePage;
+			sourceTree = "<group>";
+		};
+		CE3E097028CA06EB0089F856 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE3E097128CA06EF0089F856 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE3E097428CA07220089F856 /* Controller */,
+				CE3E097328CA071B0089F856 /* Cell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE3E097228CA06F20089F856 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE3E097328CA071B0089F856 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CE3E097428CA07220089F856 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		CED6DC8528C7AA3900F29266 = {
@@ -83,9 +165,11 @@
 		CED6DC9028C7AA3900F29266 /* MovieArtApp */ = {
 			isa = PBXGroup;
 			children = (
+				CE3E096A28CA067C0089F856 /* NetworkLayer */,
+				CE3E096D28CA06B70089F856 /* Helper */,
+				CE3E096E28CA06CA0089F856 /* Scene */,
 				CED6DC9128C7AA3900F29266 /* AppDelegate.swift */,
 				CED6DC9328C7AA3900F29266 /* SceneDelegate.swift */,
-				CED6DC9528C7AA3900F29266 /* ViewController.swift */,
 				CED6DC9728C7AA3900F29266 /* Main.storyboard */,
 				CED6DC9D28C7AA3A00F29266 /* Assets.xcassets */,
 				CED6DC9F28C7AA3A00F29266 /* LaunchScreen.storyboard */,
@@ -211,7 +295,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED6DC9C28C7AA3900F29266 /* MovieArtApp.xcdatamodeld in Sources */,
-				CED6DC9628C7AA3900F29266 /* ViewController.swift in Sources */,
 				CED6DC9228C7AA3900F29266 /* AppDelegate.swift in Sources */,
 				CED6DC9428C7AA3900F29266 /* SceneDelegate.swift in Sources */,
 			);
