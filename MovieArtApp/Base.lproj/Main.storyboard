@@ -54,6 +54,10 @@
                                         <size key="customSize" width="335" height="111"/>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="rZa-Tp-0r9" id="1yp-cp-yo0"/>
+                                    <outlet property="delegate" destination="rZa-Tp-0r9" id="yjI-3y-db5"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fhq-v3-USC"/>

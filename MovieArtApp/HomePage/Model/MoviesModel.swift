@@ -6,7 +6,7 @@ struct Movies: Codable {
     let status: Int
     let success: Bool
     let messageStatus: String
-    let results: [Result]
+    let results: [Info]
     let totalResults, totalPages: Int
 
     enum CodingKeys: String, CodingKey {
@@ -16,7 +16,7 @@ struct Movies: Codable {
     }
 }
 
-struct Result: Codable {
+struct Info: Codable {
     let actors, directors, escritors, otherTitles: [JSONAny]
     let id: String
     let image: String
