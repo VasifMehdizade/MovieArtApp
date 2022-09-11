@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="MovieArtApp" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MoviesCell" customModule="MovieArtApp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="544" height="223"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -50,6 +50,10 @@
                 <constraint firstItem="ljO-DW-ctt" firstAttribute="top" secondItem="orx-bl-094" secondAttribute="top" id="qY1-dj-rzG"/>
             </constraints>
             <size key="customSize" width="544" height="223"/>
+            <connections>
+                <outlet property="cellImage" destination="orx-bl-094" id="ngo-9w-szX"/>
+                <outlet property="cellTitle" destination="ljO-DW-ctt" id="83t-0a-7Fy"/>
+            </connections>
             <point key="canvasLocation" x="150.72463768115944" y="94.084821428571431"/>
         </collectionViewCell>
     </objects>

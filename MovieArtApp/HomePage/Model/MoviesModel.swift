@@ -16,7 +16,7 @@ struct Movies: Codable {
     }
 }
 
-struct Info: Codable {
+struct Info: Codable, MoviesCellProtocol {
     let actors, directors, escritors, otherTitles: [JSONAny]
     let id: String
     let image: String
@@ -28,6 +28,15 @@ struct Info: Codable {
     let index: Int
     let episodes: [JSONAny]
     let createdAt, updatedAt: String
+    
+    var moviePhoto: String {
+        image
+    }
+    
+    var movieTitle: String {
+        titleOriginal
+    }
+    
 
     enum CodingKeys: String, CodingKey {
         case actors, directors, escritors, otherTitles

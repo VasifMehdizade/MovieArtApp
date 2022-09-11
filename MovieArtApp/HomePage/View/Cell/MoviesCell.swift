@@ -6,12 +6,20 @@
 //
 
 import UIKit
+import SDWebImage
 
-class CollectionViewCell: UICollectionViewCell {
+protocol MoviesCellProtocol {
+    var moviePhoto : String { get }
+    var movieTitle : String { get }
+}
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+class MoviesCell: UICollectionViewCell {
+
+    @IBOutlet weak var cellImage: UIImageView!
+    @IBOutlet weak var cellTitle: UILabel!
+    
+    func configure (item : MoviesCellProtocol) {
+        cellImage.sd_setImage(with: URL(string: item.moviePhoto))
+        cellTitle.text = item.movieTitle
     }
-
 }

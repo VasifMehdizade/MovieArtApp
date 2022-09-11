@@ -29,7 +29,7 @@
         <!--Movies-->
         <scene sceneID="TDa-ya-wrq">
             <objects>
-                <viewController id="rZa-Tp-0r9" sceneMemberID="viewController">
+                <viewController id="rZa-Tp-0r9" customClass="HomePagaController" customModule="MovieArtApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1JD-JN-o0Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,6 +70,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Movies" id="0Kh-a5-o4o"/>
+                    <connections>
+                        <outlet property="collectionView" destination="PqR-gE-8wG" id="3bC-EL-LPE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o1O-oI-OKw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

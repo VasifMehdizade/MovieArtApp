@@ -10,9 +10,9 @@ import Foundation
 class HomePageManager {
     static let shared = HomePageManager()
     
-    func getMovies (complete: @escaping ((Info?, String?)->())) {
+    func getMovies (complete: @escaping ((Movies?, String?)->())) {
         let url = "https://movies-app1.p.rapidapi.com/api/movies"
-        NetworkManager.shared.request(type: Info.self,
+        NetworkManager.shared.request(type: Movies.self,
                                       url: url,
                                       method: .get) {
             response in
@@ -20,7 +20,7 @@ class HomePageManager {
             case .success(let model) :
                 complete(model, nil)
             case .failure(let error) :
-                complete(nil, error: localizedDescription)
+                complete(nil, error.localizedDescription)
             }
         }
     }
