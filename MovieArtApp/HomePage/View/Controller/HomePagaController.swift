@@ -8,13 +8,14 @@
 import UIKit
 
 class HomePagaController: UIViewController {
-    @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet private weak var collectionView: UICollectionView!
     
     var viewModel = HomePageViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        registerCell()
+        configurationViewModel()
     }
     
     func registerCell() {
@@ -46,6 +47,9 @@ extension HomePagaController: UICollectionViewDelegate, UICollectionViewDataSour
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MoviesCell", for: indexPath) as! MoviesCell
         cell.configure(item: viewModel.moviesInfos[indexPath.item])
         return cell
-        
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        CGSize(width: collectionView.frame.width, height: 220)
     }
 }

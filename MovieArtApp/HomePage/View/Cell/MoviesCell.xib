@@ -5,31 +5,21 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MoviesCell" customModule="MovieArtApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="544" height="223"/>
+            <rect key="frame" x="0.0" y="0.0" width="556" height="200"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="544" height="223"/>
+                <rect key="frame" x="0.0" y="0.0" width="556" height="200"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="orx-bl-094">
-                        <rect key="frame" x="20" y="20" width="181" height="183"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="183" id="BRY-Mk-rCQ"/>
-                            <constraint firstAttribute="width" constant="181" id="mjH-O9-If0"/>
-                        </constraints>
-                    </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljO-DW-ctt">
-                        <rect key="frame" x="221" y="20" width="303" height="20.5"/>
-                        <constraints>
-                            <constraint firstAttribute="width" constant="303" id="95Q-L0-UX1"/>
-                            <constraint firstAttribute="height" constant="20.5" id="lEn-l2-bgk"/>
-                        </constraints>
+                        <rect key="frame" x="185" y="25" width="359" height="24"/>
                         <attributedString key="attributedText">
                             <fragment content="csdf,,dsnv,dvnds,vnd,jv">
                                 <attributes>
@@ -40,21 +30,38 @@
                         </attributedString>
                         <nil key="highlightedColor"/>
                     </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="orx-bl-094">
+                        <rect key="frame" x="12" y="25" width="160" height="160"/>
+                    </imageView>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" systemColor="systemGray3Color"/>
             <constraints>
-                <constraint firstItem="orx-bl-094" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="20" id="4nq-mm-1fR"/>
-                <constraint firstItem="ljO-DW-ctt" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="221" id="57V-HY-7hY"/>
-                <constraint firstItem="orx-bl-094" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="KAC-tr-hJv"/>
-                <constraint firstItem="ljO-DW-ctt" firstAttribute="top" secondItem="orx-bl-094" secondAttribute="top" id="qY1-dj-rzG"/>
+                <constraint firstItem="ljO-DW-ctt" firstAttribute="leading" secondItem="orx-bl-094" secondAttribute="trailing" constant="13" id="7eF-bf-trK"/>
+                <constraint firstItem="orx-bl-094" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="12" id="G3Y-ip-17r"/>
+                <constraint firstItem="orx-bl-094" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="QrQ-Jl-W4b"/>
+                <constraint firstItem="orx-bl-094" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.28777" id="TrK-NV-Yyp"/>
+                <constraint firstItem="ljO-DW-ctt" firstAttribute="top" secondItem="orx-bl-094" secondAttribute="top" id="hn8-1k-GCU"/>
+                <constraint firstAttribute="trailing" secondItem="ljO-DW-ctt" secondAttribute="trailing" constant="12" id="lMG-bj-gSV"/>
+                <constraint firstItem="orx-bl-094" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" multiplier="0.8" id="vOS-G4-KwQ"/>
             </constraints>
-            <size key="customSize" width="544" height="223"/>
+            <size key="customSize" width="556" height="205"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <integer key="value" value="12"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="cellImage" destination="orx-bl-094" id="ngo-9w-szX"/>
                 <outlet property="cellTitle" destination="ljO-DW-ctt" id="83t-0a-7Fy"/>
             </connections>
-            <point key="canvasLocation" x="150.72463768115944" y="94.084821428571431"/>
+            <point key="canvasLocation" x="92.753623188405811" y="260.49107142857144"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>

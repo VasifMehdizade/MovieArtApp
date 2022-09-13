@@ -13,7 +13,7 @@ class NetworkManager {
     static let shared = NetworkManager()
     
     func request<T: Codable>(type: T.Type, url: String, method: HTTPMethod, completion: @escaping((Result<T, ErrorTypes>)->())) {
-        AF.request(url, method: method, headers: ["Authorization" : "fsq3LVXxk4FdDqKHlHggBCEwv1/j2C0k+AigMopx5SWISN8="]).responseData { response in
+        AF.request(url, method: method, headers: ["X-RapidAPI-Host" : "movies-app1.p.rapidapi.com", "X-RapidAPI-Key" : "42dbb593afmsh3afad9f03171dcap1c28e3jsnebbcadbbd2ea"]).responseData { response in
             switch response.result {
             case .success(let data):
                 self.handleResponse(data : data) { response in

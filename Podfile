@@ -9,5 +9,14 @@ target 'MovieArtApp' do
   pod 'Alamofire'
   pod 'ProgressHUD'
   pod 'KeychainAccess'
+  pod 'PanModal'
+  pod 'Localize-Swift', '~>3.2'
+  pod 'OneSignalXCFramework', '>= 3.0.0', '< 4.0'
+  pod 'FirebaseCore'
+  pod 'FirebaseFirestore'
+
+
+
+
 
 end
