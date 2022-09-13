@@ -24,7 +24,7 @@ class OnboardingController: UIViewController {
         view.backgroundColor = .black
     }
     @objc func fireTimer() {
-        let controller = storyboard?.instantiateViewController(withIdentifier: "HomePagaController") as! HomePagaController
+        let controller = storyboard?.instantiateViewController(withIdentifier: "SignInController") as! SignInController
         show(controller, sender: nil)
     }
 }

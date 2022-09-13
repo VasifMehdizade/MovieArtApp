@@ -24,6 +24,7 @@
 		CED6DC9E28C7AA3A00F29266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CED6DC9D28C7AA3A00F29266 /* Assets.xcassets */; };
 		CED6DCA128C7AA3A00F29266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CED6DC9F28C7AA3A00F29266 /* LaunchScreen.storyboard */; };
 		CEE6D5C628D1045C00E81CBC /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6D5C528D1045C00E81CBC /* OnboardingController.swift */; };
+		CEE6D5C928D1108500E81CBC /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE6D5C828D1108500E81CBC /* SignInController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		CED6DCA028C7AA3A00F29266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CED6DCA228C7AA3A00F29266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CEE6D5C528D1045C00E81CBC /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
+		CEE6D5C828D1108500E81CBC /* SignInController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInController.swift; sourceTree = "<group>"; };
 		F3190B127F1762ED564876F8 /* Pods-MovieArtApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieArtApp.release.xcconfig"; path = "Target Support Files/Pods-MovieArtApp/Pods-MovieArtApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -116,6 +118,8 @@
 		CE3E096E28CA06CA0089F856 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
+				CEE6D5CA28D11AEC00E81CBC /* Register */,
+				CEE6D5C728D1106600E81CBC /* SignIn */,
 				CEE6D5C428D1041B00E81CBC /* Onboarding */,
 				CE3E097528CA0A750089F856 /* HomePage */,
 				CE3E097B28CA0ABE0089F856 /* Search */,
@@ -314,6 +318,21 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		CEE6D5C728D1106600E81CBC /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				CEE6D5C828D1108500E81CBC /* SignInController.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		CEE6D5CA28D11AEC00E81CBC /* Register */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -433,6 +452,7 @@
 				CE3E098228CA0B960089F856 /* NetworkManager.swift in Sources */,
 				CE3E098E28CC84740089F856 /* HomePageManager.swift in Sources */,
 				CE3E099228CC91A70089F856 /* UIViewController+Ext.swift in Sources */,
+				CEE6D5C928D1108500E81CBC /* SignInController.swift in Sources */,
 				CE3E098C28CC83660089F856 /* HomePagaController.swift in Sources */,
 				CED6DC9C28C7AA3900F29266 /* MovieArtApp.xcdatamodeld in Sources */,
 				CE3E099028CC8CEC0089F856 /* HomePageViewModel.swift in Sources */,
