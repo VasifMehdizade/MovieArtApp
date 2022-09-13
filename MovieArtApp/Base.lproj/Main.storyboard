@@ -24,7 +24,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="19C-89-Tgh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1731.8840579710147" y="403.79464285714283"/>
+            <point key="canvasLocation" x="822" y="414"/>
         </scene>
         <!--Movies-->
         <scene sceneID="TDa-ya-wrq">
@@ -98,7 +98,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ETQ-a6-M5e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3415.9420289855075" y="741.96428571428567"/>
+            <point key="canvasLocation" x="-3117" y="742"/>
         </scene>
         <!--Sign In Controller-->
         <scene sceneID="ii2-lF-SxF">
@@ -207,12 +207,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bie-J1-4Ww" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2533.3333333333335" y="741.96428571428567"/>
+            <point key="canvasLocation" x="-2284" y="742"/>
         </scene>
-        <!--View Controller-->
+        <!--Register Controller-->
         <scene sceneID="4pW-3U-UVx">
             <objects>
-                <viewController id="jbC-37-Jdy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jbC-37-Jdy" customClass="RegisterController" customModule="MovieArtApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MYI-z2-U42">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -303,6 +303,9 @@
                                         <integer key="value" value="12"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="registerAction:" destination="jbC-37-Jdy" eventType="touchUpInside" id="Jhi-Y8-69m"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tW3-eR-trZ">
                                 <rect key="frame" x="20" y="644" width="374" height="31"/>
@@ -310,6 +313,9 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Do you have already account?">
                                     <color key="baseForegroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="alreadyAccountAction:" destination="jbC-37-Jdy" eventType="touchUpInside" id="79o-o9-Jqe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="i1j-nr-yi7"/>
@@ -337,10 +343,15 @@
                             <constraint firstItem="XCw-mG-FM0" firstAttribute="width" secondItem="MYI-z2-U42" secondAttribute="width" multiplier="0.903382" id="z1B-C8-OjI"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailTextFieldRegister" destination="LtB-a3-ed2" id="eYR-Yk-H5x"/>
+                        <outlet property="nameTextFieldRegister" destination="Tp0-xc-ohF" id="Fgh-EZ-afd"/>
+                        <outlet property="passwordTextFieldRegister" destination="L4S-LP-MzH" id="Try-jV-tbH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ciZ-89-BZG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1581.1594202898552" y="741.96428571428567"/>
+            <point key="canvasLocation" x="-1458" y="742"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="pJB-Xb-gpZ">
@@ -395,7 +406,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OLL-zj-cK8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1731.8840579710147" y="1060.7142857142858"/>
+            <point key="canvasLocation" x="822" y="1071"/>
         </scene>
         <!--Home-->
         <scene sceneID="eJN-Rp-XfP">
@@ -432,7 +443,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uoV-Ft-Xh9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-4326.086956521739" y="741.96428571428567"/>
+            <point key="canvasLocation" x="-3988" y="742"/>
         </scene>
     </scenes>
     <resources>
