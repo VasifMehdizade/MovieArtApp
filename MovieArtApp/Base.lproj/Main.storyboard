@@ -74,7 +74,7 @@
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PqR-gE-8wG">
                                 <rect key="frame" x="18" y="88" width="378" height="725"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="0.0" id="QXn-qt-JpB">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -89,7 +89,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="fhq-v3-USC"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="PqR-gE-8wG" firstAttribute="leading" secondItem="fhq-v3-USC" secondAttribute="leading" constant="18" id="bU3-Z2-W1p"/>
                             <constraint firstItem="PqR-gE-8wG" firstAttribute="top" secondItem="fhq-v3-USC" secondAttribute="top" id="hKn-dx-6uL"/>
@@ -522,6 +522,9 @@
         <image name="homekit" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass.circle" catalog="system" width="128" height="121"/>
         <image name="star" catalog="system" width="128" height="116"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

@@ -17,7 +17,7 @@ struct Movies: Codable {
 }
 
 struct Info: Codable, MoviesCellProtocol {
-    let actors, directors, escritors, otherTitles: [JSONAny]
+//    let actors, directors, escritors, otherTitles: [JSONAny]
     let id: String
     let image: String
     let title, rating, year, titleOriginal: String
@@ -26,7 +26,7 @@ struct Info: Codable, MoviesCellProtocol {
     let release: String
     let embedUrls: [EmbedURL]
     let index: Int
-    let episodes: [JSONAny]
+//    let episodes: [JSONAny]
     let createdAt, updatedAt: String
     
     var moviePhoto: String {
@@ -39,11 +39,11 @@ struct Info: Codable, MoviesCellProtocol {
     
 
     enum CodingKeys: String, CodingKey {
-        case actors, directors, escritors, otherTitles
+//        case actors, directors, escritors, otherTitles
         case id = "_id"
         case image, title, rating, year, titleOriginal, uuid
         case resultDescription = "description"
-        case genres, countries, release, embedUrls, index, episodes, createdAt, updatedAt
+        case genres, countries, release, embedUrls, index, /*episodes,*/ createdAt, updatedAt
     }
 }
 
@@ -52,7 +52,7 @@ struct Country: Codable {
 }
 
 struct EmbedURL: Codable {
-    let server: Server
+    let server: String
     let url: String
     let priority: Int
 }

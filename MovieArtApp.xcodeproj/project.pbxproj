@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2716D7F2F99515A4092EC93B /* Pods_MovieArtApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55E3822BB4C22E43D3DEBBEC /* Pods_MovieArtApp.framework */; };
+		2A5E702928DCC74E00781961 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2A5E702828DCC74E00781961 /* GoogleService-Info.plist */; };
 		2A62E40528D9EF88002009C7 /* Users.json in Resources */ = {isa = PBXBuildFile; fileRef = 2A62E40428D9EF88002009C7 /* Users.json */; };
 		2A62E40728D9F018002009C7 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A62E40628D9F018002009C7 /* UserModel.swift */; };
 		2A62E40B28DB8840002009C7 /* SearchPageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A62E40A28DB8840002009C7 /* SearchPageManager.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A5E702828DCC74E00781961 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2A62E40428D9EF88002009C7 /* Users.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Users.json; sourceTree = "<group>"; };
 		2A62E40628D9F018002009C7 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		2A62E40A28DB8840002009C7 /* SearchPageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPageManager.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 				CED6DCA228C7AA3A00F29266 /* Info.plist */,
 				CED6DC9A28C7AA3900F29266 /* MovieArtApp.xcdatamodeld */,
 				2A62E40428D9EF88002009C7 /* Users.json */,
+				2A5E702828DCC74E00781961 /* GoogleService-Info.plist */,
 				2A62E40628D9F018002009C7 /* UserModel.swift */,
 			);
 			path = MovieArtApp;
@@ -351,6 +354,7 @@
 				CE3E098828CC7EC70089F856 /* MoviesCell.xib in Resources */,
 				2A62E40528D9EF88002009C7 /* Users.json in Resources */,
 				CED6DC9928C7AA3900F29266 /* Main.storyboard in Resources */,
+				2A5E702928DCC74E00781961 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
