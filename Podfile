@@ -15,8 +15,4 @@ target 'MovieArtApp' do
   pod 'FirebaseCore'
   pod 'FirebaseFirestore'
 
-
-
-
-
 end
