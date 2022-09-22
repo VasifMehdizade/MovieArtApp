@@ -9,7 +9,7 @@ import UIKit
 
 class OnboardingController: UIViewController {
 
-    @IBOutlet weak var screenLabel: UILabel!
+    @IBOutlet private weak var screenLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()

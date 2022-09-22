@@ -17,6 +17,7 @@ class MoviesCell: UICollectionViewCell {
 
     @IBOutlet private weak var cellImage: UIImageView!
     @IBOutlet private weak var cellTitle: UILabel!
+    @IBOutlet weak var cellView: UIView!
     
     func configure (item : MoviesCellProtocol) {
         cellImage.sd_setImage(with: URL(string: item.moviePhoto))
